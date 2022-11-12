@@ -1,0 +1,9 @@
+*
+
+!.gitignore
+!README.md
+!init.el
+
+!customizations/*.el
+!elpa/*
+!themes/*.el
