@@ -67,3 +67,15 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+;; Style line numbers
+(set-face-foreground 'linum "pale green")
+
+;; Style line wrap curly arrow icon
+(defface my-custom-curly-face
+  '((t (:foreground "medium sea green")))
+  "Face for fringe curly bitmaps."
+  :group 'basic-faces)
+
+(set-fringe-bitmap-face 'left-curly-arrow 'my-custom-curly-face)
+(set-fringe-bitmap-face 'right-curly-arrow 'my-custom-curly-face)
